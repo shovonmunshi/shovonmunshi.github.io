@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shovon Munshi - CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box }
+        body { background-color: #0e9df0; font-family: 'Handlee', cursive; 
+              color: #fff; display: flex; flex-direction: column; 
+              justify-content: space-between; min-height: 100vh; }
+        
+        .container { flex-grow: 1; display: flex; flex-direction: column; 
+                    align-items: center; padding: 80px 15px 20px; }
+        
+        .section { background: rgba(255,255,255,0.8); padding: 25px; 
+                  border-radius: 10px; margin: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                  width: 100%; max-width: 800px; color: #000; }
+        
+        h1 { color: #20bcd5; font-size: 2.8em; margin-bottom: 15px; text-align: center; }
+        h2 { color: #20bcd5; font-size: 2em; margin: 15px 0; border-bottom: 2px solid #20bcd5; 
+            padding-bottom: 5px; }
+        
+        .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                      gap: 15px; margin: 20px 0; }
+        .contact-item { display: flex; align-items: center; gap: 10px; font-size: 1.1em; }
+        
+        ul { padding-left: 25px; }
+        li { margin: 12px 0; line-height: 1.4; }
+        
+        .footer { padding: 15px; text-align: center; color: grey; 
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1); }
+        
+        .back-home { position: fixed; top: 40px; right: 40px; font-size: 2em;
+                    color: white; transition: all 0.3s; }
+        .back-home:hover { color: #20bcd5; transform: scale(1.2); }
+        
+        .name-header { position: fixed; top: 40px; left: 50px; font-size: 2em;
+                      font-weight: bold; color: white; }
+        
+        @media (max-width: 768px) {
+            .name-header, .back-home { position: static; text-align: center; }
+            .container { padding-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="name-header">Shovon Munshi</div>
+    <a href="index.html" class="back-home"><i class="fas fa-home"></i></a>
+
+    <div class="container">
+        <section class="section">
+            <h1>Curriculum Vitae</h1>
+            <div class="contact-info">
+                <div class="contact-item"><i class="fas fa-envelope"></i>munshishovon486@gmail.com</div>
+                <div class="contact-item"><i class="fas fa-phone"></i>+880 1674723754</div>
+                <div class="contact-item"><i class="fab fa-linkedin"></i>linkedin.com/in/shovon-munshi</div>
+                <div class="contact-item"><i class="fas fa-globe"></i>shovonmunshi.github.io</div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Sc in Naval Architecture & Marine Engineering</strong><br>
+                    <a href="https://www.buet.ac.bd/web/#/" > Bangladesh University Engineering and Technology </a> (2019-2025)</li>
+                <li><strong>Higher Secondary Certificate</strong><br>
+                    <a href="https://ndc.edu.bd/"> Notre Dame College, Dhaka</a>(2017-2019)<br>
+                    Government Talentpool Scholarship</li>
+            </ul>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section class="section">
+            <h2>Research Experience</h2>
+            <ul>
+                <li><strong>Thesis:</strong> Forecasting of Inland Waterway Accident in Bangladesh: A comparative Study on SARIMA , SARIMAX and HWES models<br>
+                    - Time-series analysis using SARIMA, SARIMAX, HWES<br>
+                    - MATLAB,Python data analysis & visualization<br>
+                    - Data driven Policy making </li>
+                <li><strong>Ship Design Project:</strong> 1000 DWT Inland Cargo Ship<br>
+                    - 3D modeling (Rhinoceros 3D) & 2D design (Autocad)<br>
+                    - Application of engineering design standards </br>
+                    - Hydrodynamic performance analysis </li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, MATLAB, Excel, Fortran</li>
+                <li><strong>Design:</strong> Rhinoceros 3D, AutoCAD</li>
+                <li><strong>Analysis:</strong> Time-series, Regression, Machine Learning</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Mentor:</strong> University Admission Aspirants<br>
+                    - Guided academic strategies <br>
+                    - Improved students' exam strategies and critical thinking</li>
+                <li><strong>Physics Instructor:</strong> Udvash (2019-2021)<br>
+                    - Taught higher secondary physics concepts<br>
+                    - Integrated real-world examples in lectures</li>
+            </ul>
+        </section>
+
+        <!-- Awards Section -->
+        <section class="section">
+            <h2>Awards & Honors</h2>
+            <ul>
+                <li>Government Talentpool Scholarship (HSC 2019)</li>
+                <li>Government Talentpool Scholarship (PSC 2011)</li>
+                <li>100% Attendance Certificate (HSC)</li>
+                <li>Second Runner-up - NAME Olympiad 2023</li>
+            </ul>
+        </section>
+
+        <!-- Extracurricular Section -->
+        <section class="section">
+            <h2>Extracurricular Activities</h2>
+            <ul>
+                <li><strong>BUET Origami Club</strong><br>
+                    - President (2024-2025)<br>
+                    - Finance Secretary (2023)<br>
+                    - Assistant Finance Secretary (2022)</li>
+                <li><strong>BUET Design & Innovation Club</strong><br>
+                    - Joint Secretary, R&D (2022-2023)</li>
+                <li><strong>Anchor & Cultural Coordinator - NAME FEST 2023</strong></li>
+            </ul>
+        </section>
+
+        <!-- Interests & Hobbies Section -->
+        <section class="section">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                <div>
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Engineering research & data analysis</li>
+                        <li>Ship design & maritime safety</li>
+                        <li>Continuous learning in STEM topics</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Poem recitation</li>
+                        <li>Origami art</li>
+                        <li>Mindful relaxation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Shovon Munshi. 
+        <!--
+        Visit count: <span id="visit-count">0</span></p>
+        -->
+    </footer>
+    <!--
+    <script>
+        let visitCount = localStorage.getItem("visitCount") || 0;
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+        document.getElementById("visit-count").textContent = visitCount;
+    </script> 
+    -->
+</body>
+</html>
