@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!-- Ah, the mandatory doctype. Without this, your browser might behave like it's from 1999. -->
+<html lang="en">
+<head>
+  <!-- Yes, UTF-8. Always. Unless you're encoding ancient cuneiform tablets. -->
+  <meta charset="UTF-8" />
+  <!-- Making sure it looks nice on a phone and not like a postage stamp. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- The title of the tab, not a cryptic message to confuse the user. -->
+  <title>About Me - Shovon Munshi</title>
+  <!-- Base Favicon (Default) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  
+  <!-- Apple Touch Icon (iPhone/iPad) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Safari Pinned Tab (macOS) -->
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+  <!-- Android/Chrome Web App -->
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+
+
+
+
+
+  <!-- Because default fonts scream “I gave up.” Handlee makes it at least look like we tried. -->
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+  <!-- For fancy icons. Because Unicode arrows just aren’t cool anymore. -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Styling starts. Hold your breath. */
+    body {
+      font-family: 'Courier New', monospace; /* Retro programmer chic. */
+      background-color: #3e2f23; /* Like a chocolate bar melted into your screen. */
+      background-image: url('shovonmunshi.jpg');  /* Because why not decorate with crayons and rulers. */
+      background-size: 125%; /* Slightly exaggerated, like most CVs. */
+      background-repeat: no-repeat; /* We get it, one school border is enough. */
+      background-position: right bottom; /* Hiding it in the corner like bad handwriting. */
+      color: #f8f8f8; /* White-ish text. Because black on brown is a cry for help. */
+      margin: 0; /* Default margins? Please. */
+      min-height: 100vh; /* So it doesn’t quit halfway. */
+    }
+
+    .container {
+      padding: 40px 20px; /* Padding: because text stuck to the edge is illegal. */
+      display: flex; /* Flexbox: CSS’s way of pretending layout is easy. */
+      flex-direction: column; /* Vertical stacking. Like pancakes. */
+      align-items: center; /* Centered—because I care about symmetry. */
+    }
+
+    .resources {
+      background-color: rgba(255, 255, 255, 0.85); /* Almost white. Like milk with a splash of water. */
+      color: #000; /* Yes, black on white. Back to basics. */
+      border-radius: 10px; /* Smooth edges because sharp corners hurt feelings. */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow, not a horror story. */
+      max-width: 800px; /* Anything wider and you're writing a novel. */
+      width: 100%;
+      padding: 25px; /* Generous, like a teacher before the final exam. */
+      font-size: 1.1em; /* Slightly larger. You're welcome, eyes. */
+      line-height: 1.6; /* Breathing room for each line. Oxygen is important. */
+      text-align: justify
+    }
+
+    .resources h2 {
+      font-size: 2em; /* The only way to scream politely. */
+      color: #20bcd5; /* Some blue to cool things down. */
+      margin-bottom: 15px; /* Don’t let it sit on the paragraph’s lap. */
+    }
+
+    .resources p {
+      margin-bottom: 15px; /* Again, let them breathe. Paragraphs are people too. */
+    }
+
+    .back-home-left, .back-home-right {
+      position: absolute; /* Floating like philosophical thoughts. */
+      top: 30px; /* Not too high, not too low. */
+      font-size: 1.5em; /* Medium drama. */
+      color: #20bcd5; /* Consistent with the title. Because branding. */
+      text-decoration: none; /* Underlines are so early 2000s. */
+    }
+
+    .back-home-left {
+      left: 40px; /* Hugging the left wall. */
+      font-weight: bold; /* Yell gently. */
+    }
+    .back-home-left:hover {
+            
+            color: #20bcd5;
+            transform: scale(1.3);
+        }
+
+    .back-home-right {
+      right: 40px; /* Waving from the right. */
+      font-size: 2em; /* Slightly louder. Because it’s an icon. */
+    }
+    .back-home-right:hover {
+            color: #20bcd5;
+            transform: scale(1.4);
+        }
+
+
+            /* Social Media Icons - positioned at bottom-left */
+    .social-links {
+
+      <!--
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      -->
+      
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+
+    .social-links img:hover {
+      transform: scale(1.3);
+    }
+
+
+
+
+
+    .footer {
+      font-family: 'Handlee', cursive; /* Quirky, like your handwriting in 6th grade. */
+      background-color: rgba(0, 0, 0, 0.2); /* Transparent enough to be mysterious. */
+      padding: 12px 20px; /* Enough padding for modest comfort. */
+      text-align: center; /* Center-aligned—because endings deserve balance. */
+      color: white; /* Fading into the night. Like good advice. */
+      width: 100%; /* Footer should not feel left out. */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Name link on the left—because narcissism should be accessible. -->
+  <a href="index.html" class="back-home-left">Shovon Munshi</a>
+
+  <!-- Home icon on the right—because redundancy is luxury. -->
+  <a href="index.html" class="back-home-right"><i class="fas fa-home"></i></a>
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <section class="resources">
+      <!-- Where the magic appears, one character at a time. -->
+      <div id="typewriter"></div>
+    </section>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- And now, for the legalese. -->
+  <footer class="footer">
+
+
+
+
+
+
+
+
+    <p>© 2025 Shovon Munshi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Yes, we are typing HTML. Because plain text is for cowards.
+    const htmlContent = `
+      <h2>About Me</h2>
+      <p>I, <strong>Shovon Munshi</strong>, am a Naval Architecture and Marine Engineering B.Sc. graduate from the Bangladesh University of Engineering and Technology. I led the design of a 1000 DWT inland cargo ship, ensuring compliance with engineering standards while optimizing its performance for Bangladesh’s river routes using AutoCAD, Rhinoceros 3D, Excel, and Maxsurf under the guidance of <i>Prof. Dr. Md. Shahidul Islam</i>. </p>
+<p>My undergraduate thesis research, supervised by <i>Prof. Dr. Zobair ibn Awal</i>, on inland waterway accidents, employed <i>SARIMA, SARIMAX, and HWES models using MATLAB & Python to uncover accident trends and proposed data-driven safety policies</i>, showcasing my passion for blending data analysis with engineering impact.</p>
+      <p>I am <strong>interested in research</strong>, with a particular focus on <i>data-driven research in engineering system optimization, data analysis and predictive analytics.</i></p>      
+      <p>As president of the BUET Origami Club, I organized multiple events, grew membership by 18% in six months, and <i> facilitated collaboration with the Japan Embassy (Bangladesh), </i>honing my leadership skills through collaboration and creativity. In addition to this, I have mentored privately over 10 students preparing for the entrance exams of BUET and DU, with 9 out of 13 succeeding, helping them achieve their academic goals while enhancing my communication skills.</p>
+      <p> <strong>I’m excited to connect for opportunities in research, engineering, or collaboration. Reach out via <a href="mailto:munshishovon486@gmail.com">email</a>, <a href="https://www.linkedin.com/in/shovon-munshi-5b1819233/" target="_blank">LinkedIn</a>, or <a href="https://www.facebook.com/shanara.ba.96/" target="_blank">Facebook</a>. </strong></p>
+
+
+
+
+
+<!--
+
+<P> contact me :     <!-- Social Media Links -->
+
+<!--
+  <h2><div class="social-links">
+    <a href="https://www.facebook.com/shanara.ba.96/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+    <a href="mailto:munshishovon486@gmail.com">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </a>
+    <a href="https://www.linkedin.com/in/shovon-munshi-5b1819233/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+    </a>
+  </div></h2></p>
+
+-->
+
+    
+`;
+
+    // Find the target and prepare a temp div. Because we’re about to dissect HTML like a surgeon.
+    const target = document.getElementById("typewriter");
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = htmlContent;
+
+    // Convert child nodes into an array. Because NodeLists are lazy.
+    let nodes = Array.from(tempDiv.childNodes);
+    let index = 0;
+
+    // Function to type each node. Recursive like a cat video loop.
+    function typeNode(node, parent, callback) {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const text = node.textContent;
+        let i = 0;
+        const span = document.createElement("span");
+        parent.appendChild(span);
+
+        function typeChar() {
+          if (i < text.length) {
+            span.textContent += text[i++];
+            setTimeout(typeChar, 10); // Slow enough to look cool, fast enough to avoid boredom.
+          } else {
+            callback();
+          }
+        }
+        typeChar();
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const clone = document.createElement(node.tagName);
+        for (let attr of node.attributes) {
+          clone.setAttribute(attr.name, attr.value);
+        }
+        parent.appendChild(clone);
+
+        const children = Array.from(node.childNodes);
+        let j = 0;
+
+        function typeChildren() {
+          if (j < children.length) {
+            typeNode(children[j++], clone, typeChildren);
+          } else {
+            callback();
+          }
+        }
+        typeChildren();
+      } else {
+        callback(); // Ignore comment nodes and undefined nonsense.
+      }
+    }
+
+    // Start typing the next node. Tick tock.
+    function typeNextNode() {
+      if (index < nodes.length) {
+        typeNode(nodes[index++], target, typeNextNode);
+      }
+    }
+
+    // Start everything once the page loads. Or else the user just stares at an empty screen.
+    window.addEventListener("DOMContentLoaded", typeNextNode);
+  </script>
+</body>
+</html>
