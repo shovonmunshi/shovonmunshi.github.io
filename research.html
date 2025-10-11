@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shovon Munshi - Research & Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #3e2f23;
+      font-family: 'Handlee', cursive;
+      color: #ffffff;
+      background-image: url('shovonmunshi.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .name-header {
+      position: fixed;
+      top: 40px;
+      left: 40px;
+      font-size: 2em;
+      font-weight: bold;
+      color: #20bcd5;
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+    .name-header:hover {
+      transform: scale(1.5);
+    }
+    .back-home {
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      font-size: 2em;
+      color: #20bcd5;
+      transition: all 0.2s;
+      z-index: 100;
+    }
+    .back-home:hover {
+      transform: scale(1.3);
+    }
+    .container {
+      padding: 120px 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      margin-bottom: 30px;
+      padding: 25px;
+      color: #000;
+    }
+    h1, h2, h3 {
+      color: #20bcd5;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 20px;
+      border-bottom: 2px solid #20bcd5;
+      padding-bottom: 5px;
+    }
+    .last-updated {
+      text-align: center;
+      font-size: 0.95em;
+      color: #000;
+      margin-bottom: 10px;
+    }
+    .project {
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    /* Image normal state */
+    .project img {
+      width: 40%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 0;
+    }
+    /* Hover to enlarge */
+    .project img:hover {
+      transform: scale(2.4);
+      max-width: 200vw;
+      z-index: 10;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+    .project-content {
+      flex: 1;
+    }
+    .project-content p {
+      margin: 10px 0;
+    }
+    .skills {
+      font-size: 0.95em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .skills strong {
+      color: #000;
+    }
+    .project-year {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: #20bcd5;
+      color: #fff;
+      font-size: 0.9em;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: purple;
+      text-decoration: underline;
+    }
+    .footer {
+      padding: 12px;
+      text-align: center;
+      font-size: 0.9em;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .project {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project img {
+        width: 100%;
+      }
+      .name-header,
+      .back-home {
+        position: static;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .container {
+        padding-top: 40px;
+      }
+      .project-year {
+        top: 10px;
+        right: 10px;
+      }
+      .project img:hover {
+        transform: scale(1.2);
+        max-width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="name-header">Shovon Munshi</div>
+  <a href="index.html" class="back-home"><i class="fas fa-home"></i></a>
+  <div class="container">
+    <section class="section">
+      <h1>Research & Project Portfolio</h1>
+      <p>A selection of my research and design projects showcasing expertise in optimization, machine learning, time series forecasting, finite element analysis (FEA), and data-driven methodologies applied to complex engineering challenges.</p><br />
+      <p class="last-updated"><strong>Last Updated:</strong> March 10, 2025</p>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section">
+      <h2>Research</h2>
+      <br />
+      <!-- Thesis -->
+      <h3>Thesis</h3>
+      <div class="project">
+        <div class="project-year">2024-2025</div>
+        <div class="project-content">
+          <h4>Forecasting of Inland Waterway Accidents in Bangladesh:<br> A comparative Study on SARIMA, SARIMAX and HWES models</h4>
+          <p>This study introduces the first numerical prediction model developed specifically for the inland waterways of Bangladesh., applying time-series forecasting to anticipate ship accidents and support safer river transport. Using accident data from 2018-2022, the study compared SARIMA, SARIMAX, and Holt-Winters models to identify the most effective forecasting approach.</p>
+          <p>The Holt-Winters model achieved the best accuracy, revealing clear seasonal accident peaks during January, July, and August. The findings show that accident risks are driven mainly by seasonal and operational factors rather than external events like lockdowns.</p>
+          <p>This data-driven research offers policymakers a scientific tool for proactive safety planning, resource allocation, and progress toward sustainable transport under SDG 3 and 9.</p>
+          <p class="skills"><strong>Academic Skills:</strong> Time series forecasting, Optimizations, policy implications, Data driven Research</p>
+          <p class="skills"><strong>Technical Skills:</strong> Python, MATLAB, data visualization</p>
+          <p class="skills"><a href="https://drive.google.com/file/d/1dlN2syvzw567brxd0iraKqvKmpUkqAhR/view?usp=sharing">Read More ... </a></p>
+        </div>
+      </div>
+
+      <!-- Ongoing Research -->
+      <h3>Ongoing</h3>
+      <div class="project">
+        <div class="project-year">2025</div>
+        <div class="project-content">
+          <h4>Enhancing Safety in Bangladesh Inland Waterways through Machine Learning and Optimization</h4>
+          <p>Developing a hybrid machine learning framework combining clustering, classification, and optimization to predict severe inland waterway accidents and uncover actionable risk patterns in Bangladesh.</p>
+          <p class="skills"><strong>Academic Skills:</strong> Machine Learning, Data Analysis, Optimization</p>
+          <p class="skills"><strong>Technical Skills:</strong> Python, MATLAB, Excel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="section">
+      <h2>Project</h2>
+      <br />
+
+      <!-- Design Projects -->
+      <h3>Design</h3>
+      <div class="project">
+        <div class="project-year">2023-2024</div>
+        <div class="project-content">
+          <h4>Design of an Inland 1000 DWT Cargo Ship</h4>
+          <p>This design project developed a modern 1000-ton cargo vessel tailored for Bangladesh's river routes, particularly the Dhaka-Chattogram corridor. The design emphasizes stability, fuel efficiency, and operational safety within shallow-water constraints.</p>
+          <p>Integrating advanced hull optimization and precise hydrostatic analysis, the vessel ensures better cargo capacity, reduced resistance, and compliance with inland safety standards. Special attention was given to crew comfort, space efficiency, and sustainability through smart general arrangement planning.</p>
+          <p>The outcome demonstrates how data-informed naval design can strengthen Bangladesh's inland logistics, lowering power requirement, hence, better fuel efficiency and supporting greener trade.</p>
+          <p class="skills"><strong>Academic Skills:</strong> Naval architecture, hydrostatics, stability analysis, Hull Parameter optimization</p>
+          <p class="skills"><strong>Technical Skills:</strong> Rhino 3D, AutoCAD, Excel-based computation</p>
+         <p class="skills"> <a href="https://drive.google.com/file/d/19lMT5FIMg27dkJ3Uy0BynC1c1tj1sxtx/view?usp=sharing">Read More ...</a></p>
+        </div>
+      </div>
+
+      <!-- Structural Analysis Projects -->
+      <h3>Structural Analysis (FEM)</h3>
+
+      <!-- Plate with Stiffeners -->
+      <div class="project">
+        <div class="project-year">2023</div>
+        <img src="51.jpg" alt="Plate with Stiffeners Analysis" />
+        <div class="project-content">
+          <h4>Design and Analysis of a 6m × 3m Plate with Stiffeners</h4>
+          <p>Designed and analyzed a 6m × 3m mild steel plate with nine strategically placed stiffeners (two T-shaped and seven L-shaped) to support a 20-ton distributed load. The objective was to achieve structural efficiency while minimizing material usage.</p>
+          <p>Using finite element analysis, I evaluated stress distribution and deformation under loading conditions. The maximum von Mises stress recorded was 121.766 MPa, significantly below the yield stress of mild steel (210 MPa), confirming structural integrity. Maximum deflection was minimal (102.670×10⁻¹² m), indicating excellent stiffness characteristics.</p>
+          <p>The optimized design successfully demonstrated that the plate could withstand the specified loading conditions while using minimal material, making it both lightweight and structurally efficient.</p>
+          <p class="skills"><strong>Academic Skills:</strong> Structural optimization, stress analysis, failure criteria (von Mises), material efficiency</p>
+          <p class="skills"><strong>Technical Skills:</strong> ABAQUS, Finite Element Analysis, Structural Design</p>
+          <p class="skills"><a href="https://drive.google.com/drive/folders/1H5nLzLH-CRnY9gHLQ4DfxWLwtzzSkAU-?usp=sharing">View Analysis ...</a></p>
+        </div>
+      </div>
+
+      <!-- Torque Arm -->
+      <div class="project">
+        <div class="project-year">2023</div>
+        <img src="41.jpg" alt="Torque Arm Analysis" />
+        <div class="project-content">
+          <h4>Lightweight Design of Torque Arm with Optimized Central Hole</h4>
+          <p>Conducted structural optimization of a torque arm by systematically increasing the length of the central hole to reduce weight while maintaining structural integrity. The objective was to determine the maximum material removal possible without exceeding the yield stress of 210 MPa.</p>
+          <p>Finite element analysis revealed that the optimized design with a triangular hollow section achieved a maximum von Mises stress of 21.0888×10³ Pa, well below the yield stress. The maximum compressive and tensile stresses were 92.9274×10⁻⁹ Pa and 98.3880×10⁻⁹ Pa respectively.</p>
+          <p>This optimization successfully created the lightest and most efficient torque arm design capable of withstanding the applied loading conditions while using minimal material.</p>
+          <p class="skills"><strong>Academic Skills:</strong> Structural optimization, lightweight design, stress concentration analysis</p>
+          <p class="skills"><strong>Technical Skills:</strong> ABAQUS, Finite Element Analysis, Optimization</p>
+
+          <p class="skills"><a href="https://drive.google.com/drive/folders/1OBdykLPV4kDaKG4K_lxBNwkN3yu7dhJJ?usp=sharing">View Analysis ...</a></p>
+        </div>
+      </div>
+
+      <!-- Plate with Holes -->
+      <div class="project">
+        <div class="project-year">2023</div>
+        <img src="42.jpg" alt="Plate with Holes Analysis" />
+        <div class="project-content">
+          <h4>Stress Concentration Analysis of Plate with Multiple Holes</h4> <p>Investigated the effect of stress concentration around holes in a plate subjected to 2000 psi pressure. The analysis focused on a central 1.5-inch diameter hole surrounded by three 0.1-inch diameter holes, with material properties of E = 30×10⁶ psi and yield stress of 30,400 psi.</p> <p>Finite element analysis showed maximum tensile stress of 772.871×10⁻⁶ psi and compressive stress of 358.158×10⁻⁶ psi, both well below the yield stress. The study revealed that under current loading conditions, the holes had minimal effect on overall stress distribution.</p> <p>The analysis provided insights into potential failure mechanisms, noting that under increased loading, the circular hole could deform into an elliptical shape and potentially initiate cracks along the shortest axis (y-axis in this configuration).</p> <p class="skills"><strong>Academic Skills:</strong> Stress concentration analysis, fracture mechanics</p> <p class="skills"><strong>Technical Skills:</strong> ABAQUS, Finite Element Analysis </p>
+<p><a href="https://drive.google.com/drive/folders/1W_mmk4LpgCw2GZ_pW6j21Jws_Urvzh7S?usp=sharing
+">View Analysis ...</a></p>
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    &copy; 2025 Shovon Munshi. All rights reserved.
+  </div>
+</body>
+</html>
