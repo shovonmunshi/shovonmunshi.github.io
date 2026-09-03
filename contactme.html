@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +19,6 @@
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 
-
-
-
-
-
-
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <!-- Link to FontAwesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -37,21 +32,44 @@
 
         /* Body styling */
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #3e2f23; /* Matches the wood background */
-            font-family: 'Courier New', monospace;
-            color: #f8f8f8; /* Soft white text for visibility */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-image: url('shovonmunshi.jpg'); 
-            background-size: 115%;
-            background-position: center;
-            background-repeat: no-repeat;
-            flex-direction: column;
-        }
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #3e2f23;
+      color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('shovonmunshi.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-image: url('shovonmunshi.webp');
+      }
+    }
+      .name-header {
+      position: fixed;
+      top: 40px;
+      left: 40px;
+
+      font-size: 2em;
+      font-weight: bold;
+      color: #20bcd5;
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+
+    .name-header:hover {
+      transform: scale(1.5);
+    }
+
 
         /* Main container */
         .container {
@@ -162,7 +180,7 @@
             top: 40px;
             left: 50px;
             font-size: 2em;
-            
+            font-family: 'Handlee';
             color: #20bcd5;
             text-decoration: none;
         }
@@ -202,7 +220,97 @@
     .social-links img:hover {
       transform: scale(1.2);
     }
+    /* NAVIGATION*/
 
+    nav {
+      position: fixed;
+
+      top: 40px;
+      right: 40px;
+      font-size: 1.3em;
+      text-align: center;
+
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #20bcd5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.5 em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      color: yellow;
+      transform: scale(1.1);
+    }
+
+
+    /*DROPDOWN MENU*/
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      min-width: 160px;
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      border-radius: 4px;
+      top: 100%;
+      left: 0;
+
+      padding: 0;
+    }
+
+    .dropdown-menu li {
+      display: block;
+      margin-right: 0;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95em;
+      text-align: left;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: yellow;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+    nav a {
+      color: #20bcd5;
+    }
+
+    nav a:hover {
+      color: yellow;
+      text-decoration: none;
+    }
 
 
 
@@ -210,11 +318,71 @@
 </head>
 <body>
 
-    <!-- "Shovon Munshi" text on the top left -->
-    <a href="index.html" class="left-top-text">Shovon Munshi</a>
+    
+  <div>
+    <b><a href="index.html" class="left-top-text">Shovon Munshi</a></b>
+  </div>
+  
+<!-- Navigation -->
 
-    <!-- "Back to Home" icon -->
-    <a href="index.html" class="back-home"><i class="fas fa-home"></i></a>
+  <nav>
+    <ul>
+
+      <li>
+        <a href="aboutme.html">
+          About Me
+        </a>
+      </li>
+
+      <li>
+        <a href="research.html">
+          Research
+        </a>
+      </li>
+
+      <!-- Dropdown menu -->
+
+      <li class="dropdown">
+
+        <a href="#" class="dropdown-toggle">
+          Miscellaneous
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a href="resource.html">
+              Academic Resources
+            </a>
+          </li>
+
+        </ul>
+
+      </li>
+
+      <li>
+        <a href="contactme.html">
+          Contact
+        </a>
+      </li>
+
+      <!-- Home icon -->
+
+      <li>
+        <a
+          href="index.html"
+          class="home-icon"
+          aria-label="Home"
+          title="Home"
+        >
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
 
     <!-- Main content container -->
     <div class="container">
