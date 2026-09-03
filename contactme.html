@@ -345,30 +345,38 @@ input[type="submit"]:hover {
 <p>© 2025 Shovon Munshi. All rights reserved.</p>
 </footer>
 <!-- Dropdown JavaScript -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-  dropdownToggles.forEach(toggle => {
-    const dropdown = toggle.closest(".dropdown");
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      e.stopPropagation();
-      document.querySelectorAll(".dropdown.open").forEach(openDropdown => {
-        if (openDropdown !== dropdown) {
-          openDropdown.classList.remove("open");
-        }
+ <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const dropdownToggles =
+        document.querySelectorAll(".dropdown-toggle");
+
+      dropdownToggles.forEach(toggle => {
+
+        const dropdown =
+          toggle.closest(".dropdown");
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          dropdown.classList.toggle("open");
+
+        });
+
+        document.addEventListener("click", function (e) {
+
+          if (!dropdown.contains(e.target)) {
+
+            dropdown.classList.remove("open");
+
+          }
+
+        });
+
       });
-      dropdown.classList.toggle("open");
+
     });
-  });
-  document.addEventListener("click", function (e) {
-    if (!e.target.closest(".dropdown")) {
-      document.querySelectorAll(".dropdown.open").forEach(dropdown => {
-        dropdown.classList.remove("open");
-      });
-    }
-  });
-});
-</script>
+
+  </script>
 </body>
 </html>
