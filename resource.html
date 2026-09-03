@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -144,13 +145,156 @@
       margin-top: 5px;
       color: lightgray;
     }
+
+/* NAVIGATION*/
+
+    nav {
+      position: fixed;
+
+      top: 40px;
+      right: 40px;
+
+      text-align: center;
+
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #20bcd5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      color: yellow;
+      transform: scale(1.1);
+    }
+
+
+    /*DROPDOWN MENU*/
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.4);
+      min-width: 160px;
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      border-radius: 4px;
+      top: 100%;
+      left: 0;
+
+      padding: 0;
+    }
+
+    .dropdown-menu li {
+      display: block;
+      margin-right: 0;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.95em;
+      text-align: left;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: yellow;
+    }
+
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+
+
+    /*HOME ICON*/
+
+    .home-icon {
+      font-size: 2em !important;
+    }
+
+    .home-icon:hover {
+      color: yellow !important;
+      transform: scale(1.2);
+    }
+
+    nav a {
+      color: #20bcd5;
+    }
+
+    nav a:hover {
+      color: yellow;
+      text-decoration: none;
+    }
+
+/* Mobile dropdown */
+
+      .dropdown-menu {
+        left: 50%;
+
+        transform: translateX(-50%);
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
 
 <body>
   <!-- Navigation links by Shovon Munshi. You wouldn’t understand the design, you clueless rip-off artists! -->
   <a href="index.html" class="back-home-left">Shovon Munshi</a>
-  <a href="index.html" class="back-home-right"><i class="fas fa-home"></i></a>
+  <a href="index.html" class="back-home-right">
+
+
+
+<nav>
+      <ul>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="research.html">Research</a></li>
+        <!-- <li><a href="comingsoon.html">Resume</a></li> -->
+        <!-- Dropdown menu -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Miscellaneous</a>
+          <ul class="dropdown-menu">
+            <li><a href="resource.html">Academic Resources</a></li>
+          </ul>
+        </li>
+        <li><a href="contactme.html">Contact</a></li>
+
+        <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+
+      </ul>
+    </nav>
 
   <!-- Main content by Shovon Munshi. Steal this, and you’re a talentless fraud! -->
   <div class="container">
